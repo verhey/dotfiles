@@ -7,12 +7,14 @@ This is a project created for syncing as much of my OSX dev machine configuratio
 * git, and this repository checked out locally
   * I would recommend checking it out to `~/.dotfiles`
 * [brew](https://brew.sh/) for package installation
+* If you intend on checking out this repo using SSH, an SSH key configured and added to your github
 
 ## Installation - `dotfiles`
 
 * This is based off of Atlassian's [bare dotfile repo](https://www.atlassian.com/git/tutorials/dotfiles) implementation
 * Open a shell, and bare clone this repo into the `.dotfiles` directory
-  * `git clone --bare <git-repo-url> $HOME/.dotfiles`
+  * `git clone --bare git@github.com:verhey/dotfiles.git $HOME/.dotfiles`
+    * I used SSH (meaning you'd need a SSH key setup before), but use https if you'd rather
 * Define the following alias in your shell: 
   * `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
 * Checkout the content from the bare repo into your home folder:
