@@ -1,0 +1,15 @@
+[user]
+    name = Dean Verhey
+    email = deanverhey@gmail.com
+[core]
+    autocrlf = false
+    editor = nano
+	excludesfile = ~/.gitignore_global
+[alias]
+	adog = log --all --decorate --oneline --graph
+	cm = checkout master
+[fetch]
+    prune = true
+# if adding to yapta/coupa repos, use yapta/coupa info
+[includeIf "gitdir:~/yapta/"]
+    path = .gitconfig_work
