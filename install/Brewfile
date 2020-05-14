@@ -2,16 +2,16 @@ cask_args appdir: '/Applications'
 tap "homebrew/core"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "caskroom/homebrew-cask"
+tap "homebrew/cask-cask"
 
 # packages
 brew "git"
 brew "node"
 brew "pyenv"
+brew "pyenv-virtualenv"
 brew "sqlite"
 brew "telnet"
 brew "yarn"
-brew "zlib"
 brew "zsh"
 # casks
 cask "datagrip"
