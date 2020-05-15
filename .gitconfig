@@ -11,5 +11,5 @@
 [fetch]
     prune = true
 # if adding to yapta/coupa repos, use yapta/coupa info
-[includeIf "gitdir:~/yapta/"]
+[includeIf "gitdir:~/yapta/**"]
     path = .gitconfig_work
