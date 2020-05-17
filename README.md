@@ -6,6 +6,7 @@ This is a project created for syncing as much of my OSX dev machine configuratio
 
 * git, and this repository checked out locally
   * I would recommend checking it out to `~/.dotfiles`
+    * If you choose to check it out elsewhere, note that you will need to modify the commands below and in `install/` scripts to point to your preferred directory
 * [brew](https://brew.sh/) for package installation
 * If you intend on checking out this repo using SSH, an SSH key configured and added to your github
 
@@ -40,4 +41,5 @@ This is a project created for syncing as much of my OSX dev machine configuratio
   * `bash macos` to configure OSX-specific settings
     * This is WIP-y, Apple seems to change what works and what doesn't with every OSX version
   * `brew bundle` to install contents of `Brewfile`
-  * `zsh zshsetup` to install `oh-my-zsh` plugins and get yourself up to date with what `.zshrc` is expecting
+  * `zsh zshsetup` to install `oh-my-zsh`, a few plugins, and get yourself up to date with what the checked in `.zshrc` is expecting
+    * If you are encountering errors in the shell after cloning this repo, make sure you've run this script
