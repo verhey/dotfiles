@@ -7,15 +7,22 @@ tap "homebrew/cask-drivers"
 
 # packages
 brew "git"
+brew "mysql"
 brew "node"
-brew "pyenv"
-brew "pyenv-virtualenv"
-brew "sqlite"
 brew "telnet"
 brew "yarn"
 brew "zsh"
-# casks
-cask "datagrip"
+
+# pyenv and dependencies
+brew "openssl" 
+brew "readline" 
+brew "sqlite3" 
+brew "xz" 
+brew "zlib"
+brew "pyenv"
+brew "pyenv-virtualenv"
+
+# browsers and apps
 cask "firefox"
 cask "font-fira-code"
 cask "gimp"
@@ -23,14 +30,17 @@ cask "google-chrome"
 cask "keepassxc"
 cask "logitech-options"
 cask "microsoft-office"
-cask "mysqlworkbench"
 cask "postman"
-cask "pycharm"
 cask "slack"
 cask "spotify"
 cask "spotify-notifications"
 cask "tableau"
 cask "tableau-prep"
 cask "tunnelblick"
-cask "visual-studio-code"
 cask "zoomus"
+
+# IDEs and editors
+cask "datagrip"
+cask "mysqlworkbench"
+cask "pycharm"
+cask "visual-studio-code"
