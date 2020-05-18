@@ -40,6 +40,8 @@ alias gds='git diff --staged --ignore-space-at-eol -b -w --ignore-blank-lines'
 alias gdb='git diff develop...HEAD'
 alias gdbm='git diff master..HEAD'
 alias gb='git branch -v'
+alias gcm='git checkout master'
+alias gcd='git checkout develop'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
