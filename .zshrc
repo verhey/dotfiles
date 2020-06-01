@@ -43,6 +43,7 @@ alias gb='git branch -v'
 alias gcm='git checkout master'
 alias gcd='git checkout develop'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias deactivate='source deactivate'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
