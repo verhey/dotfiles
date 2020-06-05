@@ -10,6 +10,8 @@
 	cm = checkout master
 [fetch]
     prune = true
+[pull]
+	ff = only
 # if adding to yapta/coupa repos, use yapta/coupa info
 [includeIf "gitdir:~/yapta/**"]
     path = .gitconfig_work
