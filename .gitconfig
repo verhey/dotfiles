@@ -4,14 +4,15 @@
 [core]
     autocrlf = false
     editor = nano
-	excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore_global
 [alias]
-	adog = log --all --decorate --oneline --graph
-	cm = checkout master
+    adog = log --all --decorate --oneline --graph
+    cm = checkout master
+    cd = checkout develop
 [fetch]
     prune = true
 [pull]
-	ff = only
+    ff = only
 # if adding to yapta/coupa repos, use yapta/coupa info
 [includeIf "gitdir:~/yapta/**"]
     path = .gitconfig_work
