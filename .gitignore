@@ -1,3 +1,4 @@
 .dotfiles
 .git
-yapta/
+.secrets.env
+yapta
