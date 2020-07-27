@@ -1,0 +1,20 @@
+# Aliases
+# source ~/.zshaliases in your .zshrc
+# zsh
+alias zshconfig='code ~/.zshrc'
+alias ohmyzsh='code ~/.oh-my-zsh'
+# nav
+alias cdyb='cd ~/yapta/business'
+alias cdpr='cd ~/yapta/projects'
+# git
+alias gs='git status'
+alias gd='git diff --ignore-space-at-eol -b -w --ignore-blank-lines'
+alias gds='git diff --staged --ignore-space-at-eol -b -w --ignore-blank-lines'
+alias gdb='git diff develop...HEAD'
+alias gdbm='git diff master..HEAD'
+alias gb='git branch -v | cat' # pipe to cat for easier git branch -d BRANCH_NAME operations on OSX term
+alias gcm='git checkout master'
+alias gcd='git checkout develop'
+# dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias deactivate='source deactivate'
