@@ -7,8 +7,8 @@ This is a project created for syncing as much of my OSX dev machine configuratio
 * git, and this repository checked out locally
   * I would recommend checking it out to `~/.dotfiles`
     * If you choose to check it out elsewhere, note that you will need to modify the commands below and in `install/` scripts to point to your preferred directory
-* [brew](https://brew.sh/) for package installation
 * If you intend on checking out this repo using SSH, an SSH key configured and added to your github
+* On OSX, [brew](https://brew.sh/) for package installation
 
 ## Installation - `dotfiles`
 
@@ -37,8 +37,8 @@ This is a project created for syncing as much of my OSX dev machine configuratio
 
 ## Installation - Brewfiles and OSX setup
 
-* From the `install` directory:
-  * `bash macos` to configure OSX-specific settings
+* From the `install/osx` directory:
+  * `bash configure_osx` to configure OSX-specific settings
     * This is WIP-y, Apple seems to change what works and what doesn't with every OSX version
   * `brew bundle` to install contents of `Brewfile`
   * `zsh zshsetup` to install `oh-my-zsh`, a few plugins, and get yourself up to date with what the checked in `.zshrc` is expecting
@@ -46,3 +46,11 @@ This is a project created for syncing as much of my OSX dev machine configuratio
   * [Manually install](https://github.com/romkatv/powerlevel10k#fonts) :( the recommended fonts for the `powerlevel10k` zsh theme
     * If you have any suggestions on how to do this programmatically, let me know!
   * Manually doubleclick and install `install/SolarizedDarkPatched.terminal` to get your Terminal working as `.zshrc` and `.p10k.zsh` expect
+
+## Installation - Ubuntu (WSL)
+
+* Note - this has not been tested on regular old Ubuntu, but I see no reason it wouldn't work. Just skip the part about copying the `wsl.conf` file since it's WSL-specific
+* From the `install` directory:
+  * Copy the Windows Subsystem for Linux (WSL) config file to `/etc/.`
+  * `cp wsl.conf /etc/wsl.conf`
+
