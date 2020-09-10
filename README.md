@@ -4,10 +4,8 @@ This is a project created for syncing as much of my OSX dev machine configuratio
 
 ## Prerequisites
 
-* git, and this repository checked out locally
-  * I would recommend checking it out to `~/.dotfiles`
-    * If you choose to check it out elsewhere, note that you will need to modify the commands below and in `install/` scripts to point to your preferred directory
-* If you intend on checking out this repo using SSH, an SSH key configured and added to your github
+* git
+  * If you intend on checking out this repo using SSH, an SSH key configured and added to your github
 * On OSX, [brew](https://brew.sh/) for package installation
 
 ## Installation - `dotfiles`
@@ -52,5 +50,7 @@ This is a project created for syncing as much of my OSX dev machine configuratio
 * Note - this has not been tested on regular old Ubuntu, but I see no reason it wouldn't work. Just skip the part about copying the `wsl.conf` file since it's WSL-specific
 * From the `install` directory:
   * Copy the Windows Subsystem for Linux (WSL) config file to `/etc/.`
-  * `cp wsl.conf /etc/wsl.conf`
+    * `cp wsl.conf /etc/wsl.conf`
+  * Run `configure_ubuntu` and let it do its thing
+  * From there you'll need to reboot, and then you should be able to run `zsh zshsetup` located in the `install/` directory
 
