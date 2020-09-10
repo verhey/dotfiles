@@ -11,6 +11,7 @@ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 
 # zsh theme fonts
+sudo apt install fontcache
 wget -P ~/.fonts https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 wget -P ~/.fonts https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 wget -P ~/.fonts https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
@@ -18,3 +19,4 @@ wget -P ~/.fonts https://github.com/romkatv/powerlevel10k-media/raw/master/Meslo
 fc-cache -fv
 
 echo "Finished running, please reboot me" # different methods in WSL vs. regular ubuntu :(
+
