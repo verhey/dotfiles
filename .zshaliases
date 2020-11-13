@@ -15,6 +15,7 @@ alias gdb='git diff develop...HEAD'
 alias gdbm='git diff master..HEAD'
 alias gb='git branch -v | cat' # pipe to cat for easier git branch -d BRANCH_NAME operations on OSX term
 alias gcm='git checkout master'
+alias gcmn='git checkout main'
 alias gcd='git checkout develop'
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

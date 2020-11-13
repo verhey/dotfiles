@@ -8,6 +8,7 @@
 [alias]
     adog = log --all --decorate --oneline --graph
     cm = checkout master
+    cmn = checkout main
     cd = checkout develop
 [fetch]
     prune = true
