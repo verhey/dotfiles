@@ -6,6 +6,7 @@ alias ohmyzsh='code ~/.oh-my-zsh'
 # nav
 alias cdyb='cd ~/yapta/business'
 alias cdpr='cd ~/yapta/projects'
+alias cdc='cd ~/coupa'
 # git
 alias gs='git status'
 alias gd='git diff --ignore-space-at-eol -b -w --ignore-blank-lines'

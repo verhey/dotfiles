@@ -16,3 +16,5 @@
 # if adding to yapta/coupa repos, use yapta/coupa info
 [includeIf "gitdir:~/yapta/**"]
     path = .gitconfig_work
+[includeIf "gitdir:~/coupa/**"]
+    path = .gitconfig_work
