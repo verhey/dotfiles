@@ -10,6 +10,7 @@
     cm = checkout master
     cmn = checkout main
     cd = checkout develop
+    unstage = reset HEAD --
 [fetch]
     prune = true
 [pull]
