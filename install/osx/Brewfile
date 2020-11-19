@@ -15,13 +15,18 @@ brew "zsh"
 brew "pandoc"
 
 # pyenv and dependencies
-brew "openssl" 
-brew "readline" 
-brew "sqlite3" 
-brew "xz" 
+brew "openssl"
+brew "readline"
+brew "sqlite3"
+brew "xz"
 brew "zlib"
 brew "pyenv"
 brew "pyenv-virtualenv"
+
+# ruby and coupa enterprise deps
+brew "dip"
+brew "rbenv"
+brew "ruby-install"
 
 # browsers and apps
 cask "docker"
@@ -35,13 +40,12 @@ cask "microsoft-office"
 cask "postman"
 cask "slack"
 cask "spotify"
-cask "tableau"
-cask "tableau-prep"
 cask "tunnelblick"
 cask "zoomus"
+cask "tunnelblick"
 
 # IDEs and editors
 cask "datagrip"
-cask "mysqlworkbench"
 cask "pycharm"
+cask "rubymine"
 cask "visual-studio-code"

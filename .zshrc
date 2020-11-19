@@ -21,6 +21,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# rbenv
+eval "$(rbenv init -)"
+
 #### Secrets and Aliases
 # secrets configuration
 # source $HOME/.sample_secrets.env
