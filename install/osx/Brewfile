@@ -37,11 +37,12 @@ cask "google-chrome"
 cask "keepassxc"
 cask "logitech-options"
 cask "microsoft-office"
+cask "notion"
 cask "postman"
 cask "slack"
 cask "spotify"
 cask "tunnelblick"
-cask "zoomus"
+cask "zoom"
 cask "tunnelblick"
 
 # IDEs and editors
