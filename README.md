@@ -20,7 +20,7 @@ This is a project created for syncing as much of my OSX dev machine configuratio
   * `dotfiles checkout`
   * If this fails, delete any dotfiles that may conflict, or back them up
   * Try `dotfiles checkout` again, and you should see the files in the root of this repo end up in your home dir
-* To make `git status` output useful, set local config for this repo to ignore untracked files (as in, the rest of your home dir)
+* To make `dotfiles status` output useful, set local config for this repo to ignore untracked files (as in, the rest of your home dir)
   * `dotfiles config --local status.showUntrackedFiles no`
 
 ## Usage
