@@ -19,4 +19,3 @@ alias gcmn='git checkout main'
 alias gcd='git checkout develop'
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias deactivate='source deactivate'
