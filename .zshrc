@@ -22,6 +22,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # rbenv
+export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
 #### Secrets and Aliases
@@ -43,4 +44,3 @@ plugins=(
     zsh-syntax-highlighting
 )
 source $ZSH/oh-my-zsh.sh
-
