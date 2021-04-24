@@ -50,7 +50,13 @@ This is a project created for syncing as much of my OSX dev machine configuratio
 * Note - this has not been tested on regular old Ubuntu, but I see no reason it wouldn't work. Just skip the part about copying the `wsl.conf` file since it's WSL-specific
 * From the `install` directory:
   * Copy the Windows Subsystem for Linux (WSL) config file to `/etc/.`
-    * `cp wsl.conf /etc/wsl.conf`
-  * Run `configure_ubuntu` and let it do its thing
+    * `cp ubuntu/wsl.conf /etc/wsl.conf`
+  * Run `ubuntu/configure_ubuntu` and let it do its thing
   * From there you'll need to reboot, and then you should be able to run `zsh zshsetup` located in the `install/` directory
-
+* Optional - Windows Terminal Setup
+  * Install the Windows Terminal from the Microsoft Store
+  * Install the MesloLGF fonts manually to your *windows* installation (you can find their .ttf links in `install/ubuntu/configure_ubuntu`
+  * There is a profile for Windows Terminal included in `install/ubuntu/windows_terminal.json`
+  * This can be configured by copying to the settings directory windows terminal uses, which is at the time of writing this:
+    * `C:\Users\ME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json`
+    * This is very likely to change, however, so I would recommend going via the UI to Preferences > Open JSON File and then just copying the contents
