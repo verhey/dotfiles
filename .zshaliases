@@ -1,21 +1,31 @@
 # Aliases
 # source ~/.zshaliases in your .zshrc
+
 # zsh
 alias zshconfig='code ~/.zshrc'
 alias ohmyzsh='code ~/.oh-my-zsh'
+
 # nav
 alias cdyb='cd ~/yapta/business'
 alias cdpr='cd ~/yapta/projects'
 alias cdc='cd ~/coupa'
+
 # git
 alias gs='git status'
-alias gd='git diff --ignore-space-at-eol -b -w --ignore-blank-lines'
-alias gds='git diff --staged --ignore-space-at-eol -b -w --ignore-blank-lines'
+alias gd='git diff -b -w'
+alias gds='git diff --staged -b -w'
 alias gdb='git diff develop...HEAD'
 alias gdbm='git diff master..HEAD'
 alias gb='git branch -v | cat' # pipe to cat for easier git branch -d BRANCH_NAME operations on OSX term
-alias gcm='git checkout master'
-alias gcmn='git checkout main'
-alias gcd='git checkout develop'
+alias gcm='git switch master'
+alias gcmn='git switch main'
+alias gcd='git switch develop'
+
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# general purpose
+weather () {
+    curl https://wttr.in/"${1}"
+}
+alias whatsmyip='curl ipinfo.io'
