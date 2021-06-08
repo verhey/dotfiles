@@ -19,7 +19,11 @@ export PATH="/usr/local/sbin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init -)"
+
+# pyenv-virtualenv
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+eval "$(pyenv virtualenv-init - zsh)"
 
 # rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
