@@ -20,6 +20,8 @@ alias gb='git branch -v | cat' # pipe to cat for easier git branch -d BRANCH_NAM
 alias gcm='git switch master'
 alias gcmn='git switch main'
 alias gcd='git switch develop'
+alias mgs="find . -name .git -type d -execdir zsh -c 'pwd; git status -s -b; echo' \;"
+
 
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
