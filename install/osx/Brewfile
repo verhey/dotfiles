@@ -28,6 +28,11 @@ brew "dip"
 brew "rbenv"
 brew "ruby-install"
 
+# k8s
+brew "kubectl"
+brew "helm"
+brew "minikube"
+
 # browsers and apps
 cask "docker"
 cask "firefox"
