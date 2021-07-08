@@ -13,6 +13,7 @@ brew "telnet"
 brew "yarn"
 brew "zsh"
 brew "pandoc"
+brew "tree"
 
 # pyenv and dependencies
 brew "openssl"
