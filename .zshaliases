@@ -23,9 +23,11 @@ alias gcd='git switch develop'
 alias mgs="find . -name .git -type d -execdir zsh -c 'pwd; git status -s -b; echo' \;"
 alias mgf="find . -name .git -type d -execdir sh -c 'pwd; git fetch --all; echo' \;"
 
-
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# aws-cli
+alias aws_login='pyenv activate aws && okta-awscli --cache && source ~/.okta-credentials.cache && pyenv activate $(cat .python-version)'
 
 # general purpose
 weather () {
