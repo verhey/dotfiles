@@ -2,12 +2,10 @@ cask_args appdir: '/Applications'
 tap "homebrew/core"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/cask-cask"
 tap "homebrew/cask-drivers"
 
 # packages
 brew "git"
-brew "mysql"
 brew "node"
 brew "telnet"
 brew "yarn"
@@ -24,11 +22,6 @@ brew "zlib"
 brew "pyenv"
 brew "pyenv-virtualenv"
 
-# ruby and coupa enterprise deps
-brew "dip"
-brew "rbenv"
-brew "ruby-install"
-
 # k8s
 brew "kubectl"
 brew "helm"
@@ -38,22 +31,15 @@ brew "minikube"
 cask "docker"
 cask "firefox"
 cask "font-fira-code"
-cask "gimp"
 cask "google-chrome"
 cask "keepassxc"
 cask "logitech-options"
-cask "microsoft-office"
 cask "notion"
-cask "postman"
 cask "rectangle"
 cask "slack"
 cask "spotify"
-cask "tunnelblick"
 cask "zoom"
-cask "tunnelblick"
 
 # IDEs and editors
 cask "datagrip"
-cask "pycharm"
-cask "rubymine"
 cask "visual-studio-code"

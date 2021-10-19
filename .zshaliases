@@ -6,9 +6,7 @@ alias zshconfig='code ~/.zshrc'
 alias ohmyzsh='code ~/.oh-my-zsh'
 
 # nav
-alias cdyb='cd ~/yapta/business'
-alias cdpr='cd ~/yapta/projects'
-alias cdc='cd ~/coupa'
+alias cdc='cd ~/LD_code'
 
 # git
 alias gs='git status'
