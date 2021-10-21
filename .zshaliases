@@ -5,6 +5,9 @@
 alias zshconfig='code ~/.zshrc'
 alias ohmyzsh='code ~/.oh-my-zsh'
 
+# fix brew doctor + pyenv
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
 # nav
 alias cdc='cd ~/LD_code'
 
