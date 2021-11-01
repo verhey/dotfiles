@@ -43,3 +43,6 @@ cask "zoom"
 # IDEs and editors
 cask "datagrip"
 cask "visual-studio-code"
+
+# GCP SDK
+cask "google-cloud-sdk"

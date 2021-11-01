@@ -31,6 +31,10 @@ eval "$(pyenv virtualenv-init - zsh)"
 # source $HOME/.secrets.env
 source $HOME/.zshaliases
 
+#### Google Cloud SDK
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+
 #### Oh My Zsh
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
