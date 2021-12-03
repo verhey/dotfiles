@@ -1,5 +1,4 @@
 .dotfiles
 .git
 .secrets.env
-yapta
-coupa
+LD_Code
