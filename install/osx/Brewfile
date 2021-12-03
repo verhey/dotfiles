@@ -22,16 +22,11 @@ brew "zlib"
 brew "pyenv"
 brew "pyenv-virtualenv"
 
-# k8s
-brew "kubectl"
-brew "helm"
-brew "minikube"
-
 # browsers and apps
 cask "docker"
+cask "circleci"
 cask "firefox"
 cask "font-fira-code"
-cask "google-chrome"
 cask "keepassxc"
 cask "logitech-options"
 cask "notion"
@@ -46,3 +41,4 @@ cask "visual-studio-code"
 
 # GCP SDK
 cask "google-cloud-sdk"
+brew "kubectl"
