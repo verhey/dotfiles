@@ -12,6 +12,7 @@ brew "yarn"
 brew "zsh"
 brew "pandoc"
 brew "tree"
+brew "circleci"
 
 # pyenv and dependencies
 brew "openssl"
@@ -24,7 +25,6 @@ brew "pyenv-virtualenv"
 
 # browsers and apps
 cask "docker"
-cask "circleci"
 cask "firefox"
 cask "font-fira-code"
 cask "keepassxc"
