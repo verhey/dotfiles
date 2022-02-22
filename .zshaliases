@@ -30,6 +30,9 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # aws-cli
 alias aws_login='pyenv activate aws && okta-awscli --cache && source ~/.okta-credentials.cache && pyenv activate $(cat .python-version)'
 
+# snowsql
+alias snowsql=/Applications/SnowSQL.app/Contents/MacOS/snowsql
+
 # general purpose
 weather () {
     curl https://wttr.in/"${1}"

@@ -25,11 +25,18 @@ eval "$(pyenv init -)"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv virtualenv-init - zsh)"
 
+# rbenv
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+
 #### Secrets and Aliases
 # secrets configuration
 # source $HOME/.sample_secrets.env
 # source $HOME/.secrets.env
 source $HOME/.zshaliases
+
+# SnowSQL
+export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
 
 #### Google Cloud SDK
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc

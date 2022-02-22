@@ -13,6 +13,7 @@ brew "zsh"
 brew "pandoc"
 brew "tree"
 brew "circleci"
+brew "rbenv"
 
 # pyenv and dependencies
 brew "openssl"
