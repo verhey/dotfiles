@@ -1,4 +1,5 @@
 .dotfiles
 .git
 .secrets.env
-LD_Code
+code
+go

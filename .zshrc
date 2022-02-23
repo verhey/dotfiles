@@ -29,6 +29,18 @@ eval "$(pyenv virtualenv-init - zsh)"
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"
+
+# golang
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+go env -w "GOPRIVATE=github.com/launchdarkly" || true
+
 #### Secrets and Aliases
 # secrets configuration
 # source $HOME/.sample_secrets.env

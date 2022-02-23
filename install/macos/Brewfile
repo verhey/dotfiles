@@ -6,14 +6,12 @@ tap "homebrew/cask-drivers"
 
 # packages
 brew "git"
-brew "node"
 brew "telnet"
 brew "yarn"
 brew "zsh"
 brew "pandoc"
 brew "tree"
 brew "circleci"
-brew "rbenv"
 
 # pyenv and dependencies
 brew "openssl"
@@ -21,8 +19,13 @@ brew "readline"
 brew "sqlite3"
 brew "xz"
 brew "zlib"
+
+# env managers
 brew "pyenv"
 brew "pyenv-virtualenv"
+brew "goenv"
+brew "nvm"
+brew "rbenv"
 
 # browsers and apps
 cask "docker"
