@@ -9,7 +9,7 @@ alias ohmyzsh='code ~/.oh-my-zsh'
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
 # nav
-alias cdc='cd ~/LD_code'
+alias cdc='cd ~/code/launchdarkly'
 
 # git
 alias gs='git status'
