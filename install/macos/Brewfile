@@ -32,7 +32,6 @@ cask "docker"
 cask "firefox"
 cask "font-fira-code"
 cask "keepassxc"
-cask "logitech-options"
 cask "notion"
 cask "rectangle"
 cask "slack"
@@ -40,9 +39,7 @@ cask "spotify"
 cask "zoom"
 
 # IDEs and editors
-cask "datagrip"
 cask "visual-studio-code"
 
 # GCP SDK
-cask "google-cloud-sdk"
 brew "kubectl"

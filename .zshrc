@@ -12,8 +12,11 @@ fi
 #### System/Apps
 # system configuration
 export EDITOR=nano
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PATH="/usr/local/sbin:$PATH"
+
+# brew
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # pyenv configuration
 export PYENV_ROOT="$HOME/.pyenv"
@@ -31,7 +34,8 @@ eval "$(rbenv init -)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
 
 # golang
 export GOENV_ROOT="$HOME/.goenv"
@@ -49,10 +53,6 @@ source $HOME/.zshaliases
 
 # SnowSQL
 export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
-
-#### Google Cloud SDK
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 
 #### Oh My Zsh
 # Path to your oh-my-zsh installation.
