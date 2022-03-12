@@ -19,5 +19,5 @@
 [pull]
     ff = only
 # if adding to work repos, use work info
-[includeIf "gitdir:~/LD_code/**"]
+[includeIf "gitdir:~/code/launchdarkly/**"]
     path = .gitconfig_work
