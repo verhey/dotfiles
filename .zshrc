@@ -16,7 +16,9 @@ export PATH="/usr/local/sbin:$PATH"
 
 # brew
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ "$(arch)" = "arm64" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 # pyenv configuration
 export PYENV_ROOT="$HOME/.pyenv"
