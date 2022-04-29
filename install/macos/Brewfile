@@ -23,7 +23,7 @@ brew "zlib"
 # env managers
 brew "pyenv"
 brew "pyenv-virtualenv"
-brew "goenv"
+brew "goenv", args: ["HEAD"]
 brew "nvm"
 brew "rbenv"
 
