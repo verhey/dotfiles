@@ -12,8 +12,12 @@ fi
 #### System/Apps
 # system configuration
 export EDITOR=nano
-export PYENV_ROOT="$HOME/.pyenv"
+setopt correct
+setopt histignorealldups
+setopt histreduceblanks
 
+export PYENV_ROOT="$HOME/.pyenv"
+export GOENV_ROOT="$HOME/.goenv"
 typeset -U path
 path+=(
   $PATH
@@ -49,7 +53,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
 
 # golang
-export GOENV_ROOT="$HOME/.goenv"
 
 eval "$(goenv init -)"
 go env -w "GOPRIVATE=github.com/launchdarkly" || true
@@ -61,7 +64,6 @@ go env -w "GOPRIVATE=github.com/launchdarkly" || true
 source $HOME/.zshaliases
 
 #### Oh My Zsh
-# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
