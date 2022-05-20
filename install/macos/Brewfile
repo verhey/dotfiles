@@ -7,11 +7,15 @@ tap "homebrew/cask-drivers"
 # packages
 brew "git"
 brew "telnet"
+brew "coreutils"
+brew "jq"
 brew "yarn"
 brew "zsh"
+brew "bash"
 brew "pandoc"
 brew "tree"
 brew "circleci"
+brew "kubectl"
 
 # pyenv and dependencies
 brew "openssl"
@@ -26,6 +30,7 @@ brew "pyenv-virtualenv"
 brew "goenv", args: ["HEAD"]
 brew "nvm"
 brew "rbenv"
+brew "tfenv"
 
 # browsers and apps
 cask "docker"
@@ -40,6 +45,3 @@ cask "zoom"
 
 # IDEs and editors
 cask "visual-studio-code"
-
-# GCP SDK
-brew "kubectl"
