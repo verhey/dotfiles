@@ -12,6 +12,7 @@ fi
 #### System/Apps
 # system configuration
 export EDITOR=nano
+export CORRECT_IGNORE_FILE='.zsh_correctignore'
 setopt correct
 setopt histignorealldups
 setopt histreduceblanks
