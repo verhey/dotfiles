@@ -28,7 +28,6 @@ brew "zlib"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "goenv", args: ["HEAD"]
-brew "nvm"
 brew "rbenv"
 brew "tfenv"
 
