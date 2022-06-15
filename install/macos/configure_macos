@@ -51,6 +51,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
+# enable repeating for vs code specifically
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 ###############################################################################
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
 ###############################################################################
