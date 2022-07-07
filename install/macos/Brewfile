@@ -32,6 +32,7 @@ brew "rbenv"
 brew "tfenv"
 
 # browsers and apps
+cask "iterm2"
 cask "docker"
 cask "firefox"
 cask "font-fira-code"
