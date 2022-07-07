@@ -34,8 +34,16 @@
 	<false/>
 	<key>HideTab</key>
 	<true/>
+	<key>Hotkey</key>
+	<true/>
+	<key>HotkeyChar</key>
+	<integer>126</integer>
+	<key>HotkeyCode</key>
+	<integer>50</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>HotkeyModifiers</key>
+	<integer>1179914</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -338,6 +346,8 @@
 			<string>8B894C8A-0E94-479D-96CC-6916AE17E301</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>Icon</key>
+			<integer>0</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>

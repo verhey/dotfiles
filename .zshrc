@@ -17,6 +17,9 @@ setopt correct
 setopt histignorealldups
 setopt histreduceblanks
 
+# iterm2
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
 export PYENV_ROOT="$HOME/.pyenv"
 export GOENV_ROOT="$HOME/.goenv"
 typeset -U path
@@ -49,7 +52,6 @@ eval "$(pyenv virtualenv-init - zsh)"
 eval "$(rbenv init -)"
 
 # golang
-
 eval "$(goenv init -)"
 go env -w "GOPRIVATE=github.com/launchdarkly" || true
 
