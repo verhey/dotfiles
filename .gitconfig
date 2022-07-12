@@ -21,3 +21,6 @@
 # if adding to work repos, use work info
 [includeIf "gitdir:~/code/launchdarkly/**"]
     path = .gitconfig_work
+# never https
+[url "git@github.com:"]
+	insteadOf = https://github.com/
