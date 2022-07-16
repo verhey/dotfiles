@@ -1,0 +1,55 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 12,
+    "editor.fontWeight": "normal",
+    "editor.trimAutoWhitespace": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "trailing",
+    "editor.formatOnSave": false,
+    "editor.formatOnSaveMode": "file",
+    "editor.linkedEditing": true,
+    "[python]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[terraform]": {
+        "editor.formatOnSave": true,
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "window.title": "${activeEditorLong}${separator}${rootName}",
+    "window.zoomLevel": 0,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],
+    "files.associations": {
+        "**/ethersphere/**/*.sql": "jinja-sql"
+    },
+    "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "iterm2.app",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.plusFeatures.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "vim.smartRelativeLine": true,
+    "git.mergeEditor": true,
+    "workbench.activityBar.visible": false,
+}
