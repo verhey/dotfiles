@@ -3,7 +3,7 @@
     email = deanverhey@gmail.com
 [core]
     autocrlf = false
-    editor = nano
+    editor = vim
     excludesfile = ~/.gitignore_global
     pager = less -FRX
 [init]

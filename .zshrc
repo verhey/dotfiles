@@ -11,7 +11,7 @@ fi
 
 #### System/Apps
 # system configuration
-export EDITOR=nano
+export EDITOR=vim
 export CORRECT_IGNORE_FILE='.zsh_correctignore'
 setopt correct
 setopt histignorealldups
