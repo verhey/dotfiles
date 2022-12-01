@@ -39,4 +39,4 @@ weather () {
 }
 alias whatsmyip='curl ipinfo.io'
 
-alias dbt_run_modified='dbt run -m $(git diff --name-only --diff-filter=AMRC main -- **/*.sql | sed -r "s/.+\/(.+)\..+/\1/")'
+alias dbt_build_modified='dbt build -m $(git diff --name-only --diff-filter=AMRC main -- **/*.sql | sed -r "s/.+\/(.+)\..+/\1/")'
