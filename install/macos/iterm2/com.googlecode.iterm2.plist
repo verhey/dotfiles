@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BracketedPasteMode</key>
-	<true/>
-	<key>ConvertDosNewlines</key>
-	<true/>
 	<key>Default Bookmark Guid</key>
 	<string>8B894C8A-0E94-479D-96CC-6916AE17E301</string>
 	<key>DimBackgroundWindows</key>
@@ -19,8 +15,6 @@
 	<key>DoubleClickPerformsSmartSelection</key>
 	<false/>
 	<key>EnableProxyIcon</key>
-	<false/>
-	<key>EscapeShellCharsWithBackslash</key>
 	<false/>
 	<key>FlashTabBarInFullscreen</key>
 	<false/>
@@ -1723,16 +1717,6 @@
 			<string>/Users/verhey</string>
 		</dict>
 	</array>
-	<key>OpenBookmark</key>
-	<false/>
-	<key>PMPrintingExpandedStateForPrint2</key>
-	<false/>
-	<key>PasteSpecialRegex</key>
-	<string></string>
-	<key>PasteSpecialSubstitution</key>
-	<string> </string>
-	<key>PasteSpecialUseRegexSubstitution</key>
-	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1768,8 +1752,6 @@
 	</dict>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<false/>
-	<key>Print In Black And White</key>
-	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>ShowPaneTitles</key>
