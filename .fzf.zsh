@@ -10,4 +10,9 @@ fi
 
 # Key bindings
 # ------------
-source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+if [ "$(arch)" = "arm64" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
+else
+  source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+fi
