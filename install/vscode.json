@@ -1,8 +1,9 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 12,
+    "editor.lineHeight": 0,
+    "editor.letterSpacing": 0,
     "editor.fontWeight": "normal",
     "editor.trimAutoWhitespace": true,
     "editor.minimap.enabled": false,
@@ -10,9 +11,12 @@
     "editor.formatOnSave": false,
     "editor.formatOnSaveMode": "file",
     "editor.linkedEditing": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.hover.delay": 600,
     "[python]": {
         "editor.wordBasedSuggestions": false,
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true
     },
     "[javascript]": {
         "editor.formatOnSave": true
@@ -29,7 +33,6 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "window.title": "${activeEditorLong}${separator}${rootName}",
-    "window.zoomLevel": 0,
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "gitlens.currentLine.enabled": false,
@@ -38,12 +41,13 @@
         "document"
     ],
     "files.associations": {
-        "**/ethersphere/**/*.sql": "jinja-sql"
+        "**/ethersphere/**/*.sql": "jinja-sql",
+        "*.toml": "toml",
+        "*.webc": "html"
     },
     "terminal.explorerKind": "external",
     "terminal.external.osxExec": "iterm2.app",
     "diffEditor.ignoreTrimWhitespace": false,
-    "gitlens.plusFeatures.enabled": false,
     "redhat.telemetry.enabled": false,
     "python.analysis.typeCheckingMode": "basic",
     "python.formatting.provider": "black",
@@ -51,5 +55,11 @@
     "python.linting.flake8Enabled": true,
     "vim.smartRelativeLine": true,
     "git.mergeEditor": true,
+    "diffEditor.maxComputationTime": 0,
+    "workbench.editor.untitled.hint": "hidden",
+    "settingsSync.ignoredExtensions": [
+        "snowflake.snowflake-vsc"
+    ],
     "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Nord",
 }
