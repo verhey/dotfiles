@@ -31,11 +31,11 @@ path+=(
   "$GOENV_ROOT/bin"
   "$GOPATH/bin"
   "$GOROOT/bin"
-  "/Applications/SnowSQL.app/Contents/MacOS"
 )
 
 # brew
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+# included because M1 and Intel homebrew differs
 if [ "$(arch)" = "arm64" ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
@@ -53,12 +53,11 @@ eval "$(rbenv init -)"
 
 # golang
 eval "$(goenv init -)"
-go env -w "GOPRIVATE=github.com/launchdarkly" || true
 
-#### Secrets and Aliases
-# secrets configuration
-# source $HOME/.sample_secrets.env
-# source $HOME/.secrets.env
+# Work
+LDRC=$HOME/.launchdarklyrc && test -f $LDRC && source $LDRC
+
+#### Aliases
 source $HOME/.zshaliases
 
 #### Oh My Zsh
