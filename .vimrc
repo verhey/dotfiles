@@ -1,5 +1,6 @@
 set nocompatible
 set number
+set relativenumber
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
