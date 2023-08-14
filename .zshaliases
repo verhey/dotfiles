@@ -20,8 +20,8 @@ alias gdbm='git diff main..HEAD'
 alias gb='git --no-pager branch -v'
 alias gcm='git switch main'
 alias gcd='git switch develop'
-alias mgs="find . -name .git -type d -execdir zsh -c 'pwd; git status -s -b; echo' \;"
-alias mgf="find . -name .git -type d -execdir zsh -c 'pwd; git fetch --all; echo' \;"
+alias mgs="find . -depth 3 -name .git -type d -execdir zsh -c 'pwd; git status -s -b; echo' \;"
+alias mgf="find . -depth 3 -name .git -type d -execdir zsh -c 'pwd; git fetch --all; echo' \;"
 
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
