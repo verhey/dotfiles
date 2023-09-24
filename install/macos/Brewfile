@@ -17,6 +17,7 @@ brew "pandoc"
 brew "tree"
 brew "circleci"
 brew "kubectl"
+brew "rsync"
 
 # pyenv and dependencies
 brew "openssl"
