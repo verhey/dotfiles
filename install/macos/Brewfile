@@ -4,7 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-drivers"
 
-# packages
+# development
 brew "git"
 brew "telnet"
 brew "coreutils"
@@ -18,9 +18,14 @@ brew "tree"
 brew "circleci"
 brew "kubectl"
 brew "rsync"
+brew "zellij"
+brew "duckdb"
+brew "vim"
+brew "neovim"
+brew "bat"
 
-# pyenv and dependencies
-brew "openssl"
+# pyenv dependencies
+brew "openssl@3"
 brew "readline"
 brew "sqlite3"
 brew "xz"
@@ -33,17 +38,17 @@ brew "goenv", args: ["HEAD"]
 brew "rbenv"
 brew "tfenv"
 
-# browsers and apps
+# casks
 cask "iterm2"
 cask "docker"
 cask "firefox"
+cask "arc"
 cask "font-fira-code"
+cask "bitwarden"
 cask "keepassxc"
 cask "obsidian"
 cask "rectangle"
 cask "slack"
 cask "tidal"
 cask "zoom"
-
-# IDEs and editors
 cask "visual-studio-code"
