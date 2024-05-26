@@ -1,8 +1,0 @@
-## rename this to .okta-aws to use
-
-[default]
-base-url = replace_with_your_url
-username = replace_with_your_email
-app-link = replace_with_your_okta_aws_app_link
-role = replace_with_your_desired_iam_role
-factor = OKTA
