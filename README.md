@@ -1,6 +1,6 @@
 # dotfiles
 
-This is a project created for syncing as much of my MacOS dev machine configuration as possible across machines
+This is a project created for syncing as much of my MacOS dev machine configuration as possible
 
 ## Prerequisites
 
@@ -13,7 +13,6 @@ This is a project created for syncing as much of my MacOS dev machine configurat
 * This is based off of Atlassian's [bare dotfile repo](https://www.atlassian.com/git/tutorials/dotfiles) implementation
 * Open a shell, and bare clone this repo into the `.dotfiles` directory
   * `git clone --bare git@github.com:verhey/dotfiles.git $HOME/.dotfiles`
-    * I used SSH (meaning you'd need a SSH key setup before), but use https if you'd rather
 * Define the following alias in your shell:
   * `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
 * Checkout the content from the bare repo into your home folder:
@@ -27,11 +26,6 @@ This is a project created for syncing as much of my MacOS dev machine configurat
 
 * If you (or another application has modified a dotfile) and you want to update it here, the `dotfiles` alias you set up in previous steps works just like `git` does.
   * Your `status` command is somewhat nerfed, because you don't want to be tracking every file in your home directory, but you can still do the following:
-    * `dotfiles add <your_file>` to stage a change
-    * `dotfiles commit -m "your_message"` to commit that change
-    * `dotfiles checkout -- <your_file>` to revert a change to a file
-    * `dotfiles diff` or `dotfiles diff --staged` to view changes to your files
-    * `dotfiles push` or `dotfiles pull` to sync your local copy with remote changes
 
 ## Installation - Brewfiles and MacOS setup
 
@@ -45,19 +39,3 @@ This is a project created for syncing as much of my MacOS dev machine configurat
     * This is WIP-y, Apple seems to change what works and what doesn't with every MacOS version
     * If this fails before completing, you may need to manually run the two `iterm2` related commands at the bottom of the file
   * You may need to use the `iterm2` GUI to import the `profiles.json` file found in `install/macos/iterm2`
-
-## Installation - Ubuntu (WSL)
-
-* Note - this has not been tested on regular old Ubuntu, but I see no reason it wouldn't work. Just skip the part about copying the `wsl.conf` file since it's WSL-specific
-* From the `install` directory:
-  * Copy the Windows Subsystem for Linux (WSL) config file to `/etc/.`
-    * `cp ubuntu/wsl.conf /etc/wsl.conf`
-  * Run `ubuntu/configure_ubuntu` and let it do its thing
-  * From there you'll need to reboot, and then you should be able to run `zsh zshsetup` located in the `install/` directory
-* Optional - Windows Terminal Setup
-  * Install the Windows Terminal from the Microsoft Store
-  * Install the MesloLGF fonts manually to your *windows* installation (you can find their .ttf links in `install/ubuntu/configure_ubuntu`
-  * There is a profile for Windows Terminal included in `install/ubuntu/windows_terminal.json`
-  * This can be configured by copying to the settings directory windows terminal uses, which is at the time of writing this:
-    * `C:\Users\ME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json`
-    * This is very likely to change, however, so I would recommend going via the UI to Preferences > Open JSON File and then just copying the contents
