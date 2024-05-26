@@ -1,8 +1,8 @@
 
 # 50 characters###################################
-# short summary (under 50 chars)
 
 # 72 characters#########################################################
-# Note on implementation details
-# * thing A
-# * thing B
+
+# Syntax examples
+# Co-authored-by: NAME <NAME@EXAMPLE.COM>
+# `git shortlog -s -n -` for emails in repo
