@@ -5,4 +5,4 @@
 
 # Syntax examples
 # Co-authored-by: NAME <NAME@EXAMPLE.COM>
-# `git shortlog -s -n -` for emails in repo
+# `git shortlog -snes` for emails in repo
