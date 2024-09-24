@@ -1,8 +1,4 @@
 cask_args appdir: '/Applications'
-tap "homebrew/core"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-drivers"
 
 # development
 brew "git"
@@ -36,7 +32,7 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 brew "goenv", args: ["HEAD"]
 brew "rbenv"
-brew "tfenv"
+brew "tenv"
 
 # casks
 cask "iterm2"
@@ -45,10 +41,7 @@ cask "firefox"
 cask "arc"
 cask "font-fira-code"
 cask "bitwarden"
-cask "keepassxc"
 cask "obsidian"
 cask "rectangle"
-cask "slack"
 cask "tidal"
-cask "zoom"
 cask "visual-studio-code"
