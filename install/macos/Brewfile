@@ -19,6 +19,8 @@ brew "duckdb"
 brew "vim"
 brew "neovim"
 brew "bat"
+brew "awscli"
+brew "gh"
 
 # pyenv dependencies
 brew "openssl@3"
