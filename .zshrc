@@ -1,15 +1,11 @@
 # path
 export PYENV_ROOT="$HOME/.pyenv"
-export GOENV_ROOT="$HOME/.goenv"
 typeset -U path
 path+=(
   $PATH
   "/usr/local/sbin"
   "$PYENV_ROOT/bin"
   "$HOME/.rbenv/bin"
-  "$GOENV_ROOT/bin"
-  "$GOPATH/bin"
-  "$GOROOT/bin"
 )
 
 # brew
@@ -49,9 +45,6 @@ eval "$(pyenv virtualenv-init - zsh)"
 
 # rbenv
 eval "$(rbenv init -)"
-
-# golang
-eval "$(goenv init -)"
 
 # Work
 LDRC=$HOME/.launchdarklyrc && test -f $LDRC && source $LDRC

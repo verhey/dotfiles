@@ -22,6 +22,7 @@ brew "neovim"
 brew "bat"
 brew "awscli"
 brew "gh"
+brew "go"
 
 # pyenv dependencies
 brew "openssl@3"
@@ -33,7 +34,6 @@ brew "zlib"
 # env managers
 brew "pyenv"
 brew "pyenv-virtualenv"
-brew "goenv", args: ["HEAD"]
 brew "rbenv"
 brew "tenv"
 
