@@ -2,3 +2,4 @@ theme = nord
 confirm-close-surface = false
 macos-titlebar-style = tabs
 clipboard-trim-trailing-spaces = true
+keybind = super+f=write_screen_file:open
