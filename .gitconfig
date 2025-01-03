@@ -14,6 +14,7 @@
     cm = switch main
     cd = switch develop
     unstage = reset HEAD --
+    co = switch
 [fetch]
     prune = true
 [pull]

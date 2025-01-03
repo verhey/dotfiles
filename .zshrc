@@ -6,6 +6,7 @@ path+=(
   "/usr/local/sbin"
   "$PYENV_ROOT/bin"
   "$HOME/.rbenv/bin"
+  "$HOME/go/bin"
 )
 
 # brew
