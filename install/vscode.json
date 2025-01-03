@@ -39,15 +39,12 @@
         "*.webc": "html"
     },
     "terminal.explorerKind": "external",
-    "terminal.external.osxExec": "iterm2.app",
+    "terminal.external.osxExec": "ghostty.app",
     "redhat.telemetry.enabled": false,
     "python.analysis.typeCheckingMode": "basic",
     "vim.smartRelativeLine": true,
     "git.mergeEditor": true,
     "diffEditor.maxComputationTime": 0,
-    "settingsSync.ignoredExtensions": [
-        "snowflake.snowflake-vsc"
-    ],
     "workbench.colorTheme": "Nord",
     "search.exclude": {
         "**/node_modules": true,
