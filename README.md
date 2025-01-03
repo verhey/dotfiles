@@ -37,5 +37,3 @@ This is a project created for syncing as much of my MacOS dev machine configurat
     * If you have any suggestions on how to do this programmatically, let me know!
   * `zsh configure_macos` to configure MacOS-specific settings
     * This is WIP-y, Apple seems to change what works and what doesn't with every MacOS version
-    * If this fails before completing, you may need to manually run the two `iterm2` related commands at the bottom of the file
-  * You may need to use the `iterm2` GUI to import the `profiles.json` file found in `install/macos/iterm2`

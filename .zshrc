@@ -32,9 +32,6 @@ setopt correct
 setopt histignorealldups
 setopt histreduceblanks
 
-# iterm2
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 # pyenv configuration
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
