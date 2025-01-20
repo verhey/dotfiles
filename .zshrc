@@ -38,9 +38,6 @@ eval "$(pyenv init -)"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv virtualenv-init - zsh)"
 
-# rbenv
-eval "$(rbenv init -)"
-
 # Work
 LDRC=$HOME/.launchdarklyrc && test -f $LDRC && source $LDRC
 

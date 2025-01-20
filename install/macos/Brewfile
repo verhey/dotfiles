@@ -34,7 +34,6 @@ brew "zlib"
 # env managers
 brew "pyenv"
 brew "pyenv-virtualenv"
-brew "rbenv"
 brew "tenv"
 
 # casks
