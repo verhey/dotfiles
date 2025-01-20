@@ -5,7 +5,6 @@ path+=(
   $PATH
   "/usr/local/sbin"
   "$PYENV_ROOT/bin"
-  "$HOME/.rbenv/bin"
   "$HOME/go/bin"
 )
 
@@ -15,15 +14,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 if [ "$(arch)" = "arm64" ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
-
-# Theme
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# p10k config
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # System/Apps
 export EDITOR=nvim
@@ -43,18 +33,6 @@ LDRC=$HOME/.launchdarklyrc && test -f $LDRC && source $LDRC
 
 # Aliases
 source $HOME/.zshaliases
-
-# Oh My Zsh
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
-DISABLE_AUTO_TITLE="true"
-HIST_STAMPS="yyyy-mm-dd"
-
-plugins=(
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-source $ZSH/oh-my-zsh.sh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -15,6 +15,7 @@ This is a project created for syncing as much of my MacOS dev machine configurat
   * `git clone --bare git@github.com:verhey/dotfiles.git $HOME/.dotfiles`
 * Define the following alias in your shell:
   * `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'`
+  * or `abbr -a dotfiles "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"` if using fish
 * Checkout the content from the bare repo into your home folder:
   * `dotfiles checkout`
   * If this fails, delete any dotfiles that may conflict, or back them up
@@ -31,9 +32,10 @@ This is a project created for syncing as much of my MacOS dev machine configurat
 
 * From the `install/macos` directory:
   * `brew bundle` to install contents of `Brewfile`
-  * `zsh zshsetup` to install `oh-my-zsh`, a few plugins, and get yourself up to date with what the checked in `.zshrc` is expecting
-    * If you are encountering errors in the shell after cloning this repo, make sure you've run this script
-  * [Manually install](https://github.com/romkatv/powerlevel10k#fonts) :( the recommended fonts for the `powerlevel10k` zsh theme
-    * If you have any suggestions on how to do this programmatically, let me know!
   * `zsh configure_macos` to configure MacOS-specific settings
     * This is WIP-y, Apple seems to change what works and what doesn't with every MacOS version
+* I've been trying out fish - to set it as the default system shell do:
+  * `sudo echo /opt/homebrew/bin/fish >> /etc/shells`
+  * `chsh -s /opt/homebrew/bin/fish`
+* Someday the `zsh` pieces of this repo might disappear, or they'll get simpler
+* Probably reboot
