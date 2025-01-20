@@ -26,7 +26,7 @@ This is a project created for syncing as much of my MacOS dev machine configurat
 ## Usage
 
 * If you (or another application has modified a dotfile) and you want to update it here, the `dotfiles` alias you set up in previous steps works just like `git` does.
-  * Your `status` command is somewhat nerfed, because you don't want to be tracking every file in your home directory, but you can still do the following:
+  * Your `status` command is somewhat nerfed though, because you don't want to be tracking every file in your home directory
 
 ## Installation - Brewfiles and MacOS setup
 
@@ -37,5 +37,5 @@ This is a project created for syncing as much of my MacOS dev machine configurat
 * I've been trying out fish - to set it as the default system shell do:
   * `sudo echo /opt/homebrew/bin/fish >> /etc/shells`
   * `chsh -s /opt/homebrew/bin/fish`
-* Someday the `zsh` pieces of this repo might disappear, or they'll get simpler
+  * Someday the `zsh` pieces of this repo might disappear, or they'll get simpler
 * Probably reboot
