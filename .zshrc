@@ -17,8 +17,6 @@ fi
 
 # System/Apps
 export EDITOR=nvim
-export CORRECT_IGNORE_FILE='.zsh_correctignore'
-setopt correct
 setopt histignorealldups
 setopt histreduceblanks
 
