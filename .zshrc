@@ -26,9 +26,6 @@ eval "$(pyenv init -)"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv virtualenv-init - zsh)"
 
-# Work
-LDRC=$HOME/.launchdarklyrc && test -f $LDRC && source $LDRC
-
 # Aliases
 source $HOME/.zshaliases
 
