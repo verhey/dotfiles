@@ -14,13 +14,13 @@ abbr -a cdc "cd $HOME/code"
 abbr -a dotfiles "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # Envvars
-set EDITOR nvim
-set PYENV_ROOT $HOME/.pyenv
+set -x EDITOR nvim
+set -x PYENV_ROOT $HOME/.pyenv
 
 # PATH
-fish_add_path $PYENV_ROOT/bin
-fish_add_path $HOME/go/bin
-fish_add_path /opt/homebrew/bin
+fish_add_path -g $PYENV_ROOT/bin
+fish_add_path -g $HOME/go/bin
+fish_add_path -g /opt/homebrew/bin
 pyenv init - fish | source
 
 if type -q fzf
