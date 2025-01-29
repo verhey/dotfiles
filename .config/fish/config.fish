@@ -15,13 +15,10 @@ abbr -a dotfiles "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # Envvars
 set -x EDITOR nvim
-set -x PYENV_ROOT $HOME/.pyenv
 
 # PATH
-fish_add_path -g $PYENV_ROOT/bin
 fish_add_path -g $HOME/go/bin
 fish_add_path -g /opt/homebrew/bin
-pyenv init - fish | source
 
 if type -q fzf
     fzf --fish | source
@@ -30,3 +27,6 @@ end
 if test -f $HOME/.launchdarklyrc
     source $HOME/.launchdarklyrc
 end
+
+# autocompletes
+uv generate-shell-completion fish | source

@@ -33,9 +33,8 @@ brew "xz"
 brew "zlib"
 
 # env managers
-brew "pyenv"
-brew "pyenv-virtualenv"
 brew "tenv"
+brew "uv"
 
 # casks
 cask "ghostty"
