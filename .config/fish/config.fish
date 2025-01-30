@@ -19,6 +19,7 @@ set -x EDITOR nvim
 # PATH
 fish_add_path -g $HOME/go/bin
 fish_add_path -g /opt/homebrew/bin
+fish_add_path -g $HOME/.local/bin
 
 if type -q fzf
     fzf --fish | source
