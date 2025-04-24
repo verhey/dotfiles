@@ -1,0 +1,29 @@
+{
+  "icon_theme": "Catppuccin Mocha",
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-thinking-latest"
+    },
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Nord"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "languages": { "YAML": { "format_on_save": "off" } },
+  "collaboration_panel": { "button": false },
+  "terminal": { "button": false }
+}
