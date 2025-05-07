@@ -1,6 +1,6 @@
 {
   "icon_theme": "Catppuccin Mocha",
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet-thinking-latest"
@@ -17,13 +17,23 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Nord"
+    "dark": "Catppuccin Frappé"
   },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  "languages": { "YAML": { "format_on_save": "off" } },
+  "languages": {
+    "YAML": { "format_on_save": "off" },
+    "Python": {
+      "language_servers": ["ruff"],
+      "format_on_save": "off"
+    }
+  },
   "collaboration_panel": { "button": false },
+  "use_key_equivalents": true,
+  "bindings": {
+    "cmd-shift-c": null // originally "collab_panel::ToggleFocus"
+  },
   "terminal": { "button": false }
 }
