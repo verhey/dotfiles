@@ -1,9 +1,17 @@
 {
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
   "icon_theme": "Catppuccin Mocha",
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-thinking-latest"
+      "model": "claude-3-7-sonnet-latest"
     },
     "version": "2"
   },
