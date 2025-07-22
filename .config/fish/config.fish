@@ -20,6 +20,7 @@ set -gx VOLTA_HOME "$HOME/.volta"
 # PATH
 fish_add_path -g $HOME/go/bin
 fish_add_path -g /opt/homebrew/bin
+fish_add_path -g /opt/homebrew/sbin
 fish_add_path -g $HOME/.local/bin
 fish_add_path -g "$VOLTA_HOME/bin"
 
