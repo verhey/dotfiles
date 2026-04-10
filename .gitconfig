@@ -21,7 +21,7 @@
 [pull]
     ff = only
 # if adding to work repos, use work info
-[includeIf "gitdir:~/code/anrok/"]
+[includeIf "gitdir:~/code/TODO/"]
     path = .gitconfig_work
 # never https
 [url "git@github.com:"]

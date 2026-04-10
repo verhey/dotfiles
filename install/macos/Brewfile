@@ -37,7 +37,6 @@ brew "zlib"
 # env managers
 brew "uv"
 brew "ollama"
-brew "volta"
 
 # casks
 cask "ghostty"
@@ -51,4 +50,5 @@ cask "obsidian"
 cask "rectangle"
 cask "tidal"
 cask "visual-studio-code"
-cask "zed@preview"
+cask "cursor"
+cask "claude-code"
