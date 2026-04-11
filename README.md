@@ -35,7 +35,7 @@ This is a project created for syncing as much of my MacOS dev machine configurat
   * `zsh configure_macos` to configure MacOS-specific settings
     * This is WIP-y, Apple seems to change what works and what doesn't with every MacOS version
 * I've been trying out fish - to set it as the default system shell do:
-  * `sudo echo /opt/homebrew/bin/fish >> /etc/shells`
-  * `chsh -s /opt/homebrew/bin/fish`
+  * `sudo echo $(which fish) >> /etc/shells`
+  * `chsh -s $(which fish)`
   * Someday the `zsh` pieces of this repo might disappear, or they'll get simpler
 * Probably reboot

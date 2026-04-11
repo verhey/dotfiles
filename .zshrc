@@ -1,10 +1,8 @@
 # path
-export PYENV_ROOT="$HOME/.pyenv"
 typeset -U path
 path+=(
   $PATH
   "/usr/local/sbin"
-  "$PYENV_ROOT/bin"
   "$HOME/go/bin"
 )
 
@@ -20,16 +18,8 @@ export EDITOR=nvim
 setopt histignorealldups
 setopt histreduceblanks
 
-# pyenv configuration
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-eval "$(pyenv virtualenv-init - zsh)"
-
 # Aliases
 source $HOME/.zshaliases
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"

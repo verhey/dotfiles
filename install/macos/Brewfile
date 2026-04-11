@@ -16,7 +16,6 @@ brew "pandoc"
 brew "tree"
 brew "parallel"
 brew "kubectl"
-brew "rsync"
 brew "duckdb"
 brew "ripgrep"
 brew "vim"
@@ -25,7 +24,6 @@ brew "bat"
 brew "awscli"
 brew "gh"
 brew "go"
-brew "pulumi"
 
 # pyenv dependencies
 brew "openssl@3"
@@ -36,7 +34,6 @@ brew "zlib"
 
 # env managers
 brew "uv"
-brew "ollama"
 
 # casks
 cask "ghostty"
