@@ -38,7 +38,7 @@ brew "uv"
 
 # casks
 cask "ghostty"
-cask "docker"
+cask "docker-desktop"
 cask "firefox"
 cask "zen"
 cask "font-fira-code"
