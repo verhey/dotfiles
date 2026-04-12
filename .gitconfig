@@ -4,7 +4,6 @@
     useConfigOnly = true
 [core]
     autocrlf = false
-    editor = nvim
     excludesfile = ~/.gitignore_global
     pager = less -FRX
 [init]

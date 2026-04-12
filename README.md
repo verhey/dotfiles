@@ -49,7 +49,7 @@ I used to keep a script of various commands I'd run on new machines for things l
 | Disable automatic period substitution | `defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false` |
 | Disable smart quotes | `defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false` |
 | Disable auto-correct | `defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false` |
-| Set a fast keyboard repeat rate | `defaults write NSGlobalDomain KeyRepeat -int 1` / `defaults write NSGlobalDomain InitialKeyRepeat -int 10` |
+| Set a fast keyboard repeat rate | `defaults write NSGlobalDomain KeyRepeat -int 1 && defaults write NSGlobalDomain InitialKeyRepeat -int 10` |
 | Enable key repeating for an application | `defaults write TODO_REPLACE_WITH_YOUR_APPLICATION ApplePressAndHoldEnabled -bool false` |
 | Use plain text mode for new TextEdit documents | `defaults write com.apple.TextEdit RichText -int 0` |
 | Open and save files as UTF-8 in TextEdit | `defaults write com.apple.TextEdit PlainTextEncoding -int 4 && defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4` |
