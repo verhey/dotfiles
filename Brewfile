@@ -1,51 +1,61 @@
 cask_args appdir: '/Applications'
 
-# development
+# version control
 brew "git"
-brew "telnet"
-brew "coreutils"
-brew "jq"
-brew "yq"
-brew "fzf"
-brew "yarn"
+brew "gh"
+
+# shells & prompt
 brew "zsh"
 brew "bash"
 brew "fish"
 brew "starship"
-brew "pandoc"
-brew "tree"
-brew "parallel"
-brew "kubectl"
-brew "duckdb"
-brew "ripgrep"
+
+# editors
 brew "vim"
-brew "bat"
-brew "awscli"
-brew "gh"
-brew "go"
 brew "helix"
 
-# pyenv dependencies
-brew "openssl@3"
-brew "readline"
-brew "sqlite3"
-brew "xz"
-brew "zlib"
+# cloud & infrastructure
+brew "kubectl"
+brew "awscli"
 
-# env managers
+# cli utilities
+brew "coreutils"
+brew "jq"
+brew "yq"
+brew "fzf"
+brew "ripgrep"
+brew "bat"
+brew "tree"
+brew "parallel"
+brew "telnet"
+brew "pandoc"
+brew "duckdb"
+
+# languages & package managers
+brew "go"
 brew "uv"
+brew "node"
+brew "tenv"
 
-# casks
+# dev tools
 cask "ghostty"
 cask "docker-desktop"
+cask "visual-studio-code"
+cask "cursor"
+cask "claude-code"
+
+# browsers
 cask "firefox"
 cask "zen"
+cask "google-chrome"
+
+# fonts
 cask "font-fira-code"
 cask "font-meslo-lg-nerd-font"
+
+# productivity & media
 cask "bitwarden"
 cask "obsidian"
 cask "rectangle"
 cask "tidal"
-cask "visual-studio-code"
-cask "cursor"
-cask "claude-code"
+cask "slack"
