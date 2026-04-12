@@ -14,22 +14,16 @@ abbr -a cdc "cd $HOME/code"
 abbr -a dotfiles "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # Envvars
-set -x EDITOR nvim
-set -gx VOLTA_HOME "$HOME/.volta"
+set -x EDITOR hx
 
 # PATH
 fish_add_path -g $HOME/go/bin
 fish_add_path -g /opt/homebrew/bin
 fish_add_path -g /opt/homebrew/sbin
 fish_add_path -g $HOME/.local/bin
-fish_add_path -g "$VOLTA_HOME/bin"
 
 if type -q fzf
     fzf --fish | source
-end
-
-if test -f $HOME/.anrokrc
-    source $HOME/.anrokrc
 end
 
 # autocompletes
