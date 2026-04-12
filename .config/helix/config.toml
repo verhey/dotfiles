@@ -1,0 +1,9 @@
+theme = "nordic"
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = ""
+
+[editor]
+line-number = "relative"
+mouse = true

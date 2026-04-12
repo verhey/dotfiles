@@ -24,6 +24,7 @@ brew "bat"
 brew "awscli"
 brew "gh"
 brew "go"
+brew "helix"
 
 # pyenv dependencies
 brew "openssl@3"
