@@ -4,6 +4,9 @@ theme = "nordic"
 enable = true
 wrap-indicator = ""
 
+[editor.cursor-shape]
+insert = "bar"
+
 [editor]
 line-number = "relative"
 mouse = true
