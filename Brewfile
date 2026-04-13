@@ -35,7 +35,6 @@ brew "duckdb"
 brew "go"
 brew "uv"
 brew "node"
-brew "tenv"
 
 # dev tools
 cask "ghostty"
