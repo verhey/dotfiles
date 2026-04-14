@@ -29,8 +29,7 @@ This is a project created for syncing as much of my MacOS dev machine configurat
 
 ## Installation - Brew and Fish
 
-* From the `install/macos` directory:
-  * `brew bundle` to install contents of `Brewfile`
+* `brew bundle` to install contents of `Brewfile`
 * Set Fish as the default system shell via:
   * `sudo echo $(which fish) >> /etc/shells`
   * `chsh -s $(which fish)`
