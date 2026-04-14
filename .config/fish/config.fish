@@ -23,6 +23,7 @@ fish_add_path -g /opt/homebrew/sbin
 fish_add_path -g $HOME/.local/bin
 
 # Secrets (not in version control)
+# set with set -x MY_SECRET "replace-me"
 if test -f ~/.config/fish/secrets.fish
     source ~/.config/fish/secrets.fish
 end
