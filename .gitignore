@@ -1,5 +1,24 @@
 .dotfiles
 .git
-.secrets.env
 code
 go
+
+# History dotfiles
+.*_history
+
+# Tool caches
+.npm
+.docker
+.cache
+
+# macOS built-in folders
+Applications
+Calibre Library
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public

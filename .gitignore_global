@@ -3,3 +3,5 @@
 .dotfiles/
 .ssh/
 **/.python-version
+.config/fish/secrets.fish
+**/.env

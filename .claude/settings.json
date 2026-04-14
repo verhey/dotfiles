@@ -1,6 +1,5 @@
 {
   "includeCoAuthoredBy": true,
-  "defaultMode": "plan",
   "permissions": {
     "allow": [
       "Fetch",
@@ -52,5 +51,6 @@
       "Bash(terraform *)"
     ]
   },
-  "model": "opus[1m]"
+  "model": "opus",
+  "defaultMode": "plan"
 }
