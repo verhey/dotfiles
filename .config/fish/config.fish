@@ -22,6 +22,9 @@ fish_add_path -g /opt/homebrew/bin
 fish_add_path -g /opt/homebrew/sbin
 fish_add_path -g $HOME/.local/bin
 
+# fnm (Node.js version manager)
+fnm env --use-on-cd --shell fish | source
+
 # Secrets (not in version control)
 # set with set -x MY_SECRET "replace-me"
 if test -f ~/.config/fish/secrets.fish

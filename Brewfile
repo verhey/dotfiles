@@ -34,7 +34,7 @@ brew "duckdb"
 # languages & package managers
 brew "go"
 brew "uv"
-brew "node"
+brew "fnm"
 
 # dev tools
 cask "ghostty"
