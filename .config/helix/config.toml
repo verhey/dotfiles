@@ -10,3 +10,6 @@ insert = "bar"
 [editor]
 line-number = "relative"
 mouse = true
+
+[editor.file-picker]
+hidden = false
