@@ -42,6 +42,8 @@
       "Read(~/.git-credentials)",
       "Read(~/.config/gh/**)",
       "Read(*.env)",
+      "Read(*ngrok.yml)",
+      "Read(*secrets.fish)",
       "Read(.env.*)",
       "Bash(curl *)",
       "Bash(wget *)",
