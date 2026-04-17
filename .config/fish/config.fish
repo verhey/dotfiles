@@ -12,6 +12,7 @@ abbr -a gb "git --no-pager branch -v"
 abbr -a gcm "git switch main"
 abbr -a cdc "cd $HOME/code"
 abbr -a dotfiles "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+abbr -a nvm fnm
 
 # Envvars
 set -x EDITOR hx
