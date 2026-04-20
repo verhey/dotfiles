@@ -1,3 +1,10 @@
 [user]
     name = Dean Verhey
     email = "dean.verhey@fieldguide.io"
+    signingkey = /Users/dean/.ssh/signing.pub
+[gpg]
+    format = ssh
+[commit]
+    gpgsign = true
+[tag]
+    gpgsign = true
