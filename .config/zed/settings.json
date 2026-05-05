@@ -1,0 +1,40 @@
+{
+  "base_keymap": "VSCode",
+  "helix_mode": true,
+  "vim_mode": false,
+  "show_edit_predictions": false,
+  "edit_predictions": {
+    "mode": "subtle",
+    "provider": "zed",
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha",
+  },
+  "ui_font_size": 15,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Nord Dark",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "languages": {
+    "YAML": { "format_on_save": "off" },
+    "Python": {
+      "language_servers": ["ruff"],
+      "format_on_save": "off",
+    },
+  },
+  "collaboration_panel": { "button": false },
+  "terminal": { "button": false },
+}

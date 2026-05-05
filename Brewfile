@@ -40,8 +40,8 @@ brew "fnm"
 cask "ghostty"
 cask "docker-desktop"
 cask "visual-studio-code"
-cask "cursor"
 cask "claude-code"
+cask "zed"
 
 # browsers
 cask "firefox"
