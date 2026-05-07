@@ -60,5 +60,6 @@
     ]
   },
   "model": "opus[1m]",
-  "defaultMode": "plan"
+  "defaultMode": "plan",
+  "awaySummaryEnabled": false
 }
