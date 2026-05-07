@@ -22,20 +22,23 @@
       "Bash(tail:*)",
       "Bash(wc:*)",
       "Bash(which:*)",
-      "Bash(gh issue list:*)",
-      "Bash(gh issue status:*)",
-      "Bash(gh issue view:*)",
-      "Bash(gh pr diff:*)",
-      "Bash(gh pr list:*)",
-      "Bash(gh pr status:*)",
-      "Bash(gh pr view:*)",
-      "Bash(gh search:*)",
+      "Bash(gh issue list*)",
+      "Bash(gh issue status*)",
+      "Bash(gh issue view*)",
+      "Bash(gh pr diff*)",
+      "Bash(gh pr list*)",
+      "Bash(gh pr status*)",
+      "Bash(gh pr view*)",
+      "Bash(gh pr checks*)",
+      "Bash(gh search*)",
       "Bash(git status *)",
       "Bash(git diff *)",
       "Bash(git log *)",
-      "mcp__shortcut__*-get-*",
+      "mcp__notion__notion-fetch",
+      "mcp__notion__notion-query-data-sources",
       "mcp__shortcut__*-list",
-      "mcp__shortcut__*-search"
+      "mcp__shortcut__*-search",
+      "mcp__shortcut__*-get-*"
     ],
     "deny": [
       "Read(~/.ssh/**)",
@@ -56,6 +59,6 @@
       "Bash(terraform *)"
     ]
   },
-  "model": "opus",
+  "model": "opus[1m]",
   "defaultMode": "plan"
 }
