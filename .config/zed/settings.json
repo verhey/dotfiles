@@ -1,4 +1,18 @@
 {
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "cli_default_open_behavior": "existing_window",
   "base_keymap": "VSCode",
   "helix_mode": true,
@@ -36,6 +50,7 @@
       "format_on_save": "off",
     },
   },
-  "collaboration_panel": { "button": false },
+  "collaboration_panel": { "dock": "left",
+                           "button": false },
   "terminal": { "button": false },
 }
