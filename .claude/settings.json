@@ -63,5 +63,9 @@
   },
   "model": "opus[1m]",
   "defaultMode": "plan",
-  "awaySummaryEnabled": false
+  "awaySummaryEnabled": false,
+  "statusLine": {
+    "type": "command",
+    "command": "sh ~/.claude/statusline-command.sh"
+  }
 }
