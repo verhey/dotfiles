@@ -62,10 +62,11 @@
     ]
   },
   "model": "opus[1m]",
-  "defaultMode": "plan",
-  "awaySummaryEnabled": false,
   "statusLine": {
     "type": "command",
     "command": "sh ~/.claude/statusline-command.sh"
-  }
+  },
+  "awaySummaryEnabled": false,
+  "defaultMode": "plan",
+  "skipAutoPermissionPrompt": true
 }
