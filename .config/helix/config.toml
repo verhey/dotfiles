@@ -10,6 +10,8 @@ insert = "bar"
 [editor]
 line-number = "relative"
 mouse = true
+trim-trailing-whitespace = true
+trim-final-newlines = true
 
 [editor.file-picker]
 hidden = false
