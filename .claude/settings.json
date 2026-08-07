@@ -61,12 +61,13 @@
       "Bash(terraform *)"
     ]
   },
-  "model": "opus[1m]",
+  "model": "claude-opus-4-8",
   "statusLine": {
     "type": "command",
     "command": "sh ~/.claude/statusline-command.sh"
   },
+  "effortLevel": "high",
   "awaySummaryEnabled": false,
-  "defaultMode": "plan",
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "defaultMode": "plan"
 }
