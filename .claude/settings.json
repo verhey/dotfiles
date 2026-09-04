@@ -1,5 +1,5 @@
 {
-  "includeCoAuthoredBy": true,
+  "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
       "Fetch",
@@ -69,5 +69,8 @@
   "effortLevel": "high",
   "awaySummaryEnabled": false,
   "skipAutoPermissionPrompt": true,
-  "defaultMode": "plan"
+  "defaultMode": "plan",
+  "enabledPlugins": {
+    "datadog@claude-plugins-official": true
+  }
 }

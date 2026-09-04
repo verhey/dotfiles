@@ -26,10 +26,9 @@ fish_add_path -g $HOME/.local/bin
 # fnm (Node.js version manager)
 fnm env --use-on-cd --shell fish | source
 
-# Secrets (not in version control)
-# set with set -x MY_SECRET "replace-me"
-if test -f ~/.config/fish/secrets.fish
-    source ~/.config/fish/secrets.fish
+# Work (not in version control)
+if test -f ~/.config/fish/work.fish
+    source ~/.config/fish/work.fish
 end
 
 if type -q fzf
@@ -38,3 +37,10 @@ end
 
 # autocompletes
 uv generate-shell-completion fish | source
+
+# pnpm
+set -gx PNPM_HOME /Users/dean/Library/pnpm
+if not string match -q -- "$PNPM_HOME/bin" $PATH
+    set -gx PATH "$PNPM_HOME/bin" $PATH
+end
+# pnpm end
