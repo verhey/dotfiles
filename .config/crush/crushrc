@@ -1,0 +1,14 @@
+option attribution-trailer-style none
+option attribution-generated-with false
+option auto-summarize false
+option metrics false
+option ui transparent true
+option global-context-path "$HOME/.claude/CLAUDE.md"
+
+permissions allow view ls grep
+permissions deny aws terraform
+
+hook add PreToolUse \
+  --matcher '^(view|edit|write|multiedit)$' \
+  --command '"$HOME/.config/crush/hooks/deny-sensitive-paths.sh"' \
+  --name deny-sensitive-paths
