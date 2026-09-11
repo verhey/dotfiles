@@ -1,0 +1,9 @@
+{
+  "lastChangelogVersion": "0.85.1",
+  "theme": "dark",
+  "defaultProjectTrust": "ask",
+  "enableInstallTelemetry": false,
+  "terminal": {
+    "showTerminalProgress": true
+  }
+}
