@@ -10,6 +10,3 @@ path+=(
 export EDITOR=vim
 setopt histignorealldups
 setopt histreduceblanks
-
-# Aliases
-source $HOME/.zshaliases
