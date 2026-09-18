@@ -8,6 +8,10 @@ option global-context-path "$HOME/.claude/CLAUDE.md"
 permissions allow view ls grep
 permissions deny aws terraform
 
+mcp add notion --type http --url "https://mcp.notion.com/mcp" --oauth true
+mcp add datadog --type http --url "https://mcp.us5.datadoghq.com/v1/mcp" --oauth true
+mcp add shortcut --type http --url "https://mcp.shortcut.com/mcp" --oauth true
+
 hook add PreToolUse \
   --matcher '^(view|edit|write|multiedit)$' \
   --command '"$HOME/.config/crush/hooks/deny-sensitive-paths.sh"' \

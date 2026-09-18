@@ -10,3 +10,4 @@
 * Before saving files, ensure you are not introducing whitespace errors like trailing spaces or space-before-tab indentations.
 * Before saving files, ensure you are not introducing end of file trailing newline errors.
 * Always open PRs as drafts.
+* Ask for permission before doing anything that would tie to my own voice. GH PR descriptions or comments, Notion comments, Shortcut story comments, etc. should all be vetted.

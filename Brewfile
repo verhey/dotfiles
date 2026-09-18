@@ -30,6 +30,8 @@ brew "parallel"
 brew "telnet"
 brew "pandoc"
 brew "duckdb"
+brew "crane"
+brew "direnv"
 
 # languages & package managers
 brew "go"
@@ -37,6 +39,7 @@ brew "uv"
 brew "fnm"
 
 # dev tools
+brew "charmbracelet/tap/crush"
 cask "ghostty"
 cask "docker-desktop"
 cask "visual-studio-code"
