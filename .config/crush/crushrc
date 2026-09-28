@@ -5,7 +5,7 @@ option metrics false
 option ui transparent true
 option global-context-path "$HOME/.claude/CLAUDE.md"
 
-permissions allow view ls grep
+permissions allow view ls glob grep pre-commit
 permissions deny aws terraform
 
 mcp add notion --type http --url "https://mcp.notion.com/mcp" --oauth true
