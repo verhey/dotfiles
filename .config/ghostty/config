@@ -1,7 +1,19 @@
+# styling/general
 theme = nord
 confirm-close-surface = false
-macos-titlebar-style = tabs
-clipboard-trim-trailing-spaces = true
-keybind = super+f=write_screen_file:open
 font-family = "MesloLGS Nerd Font Mono"
+macos-titlebar-style = tabs
+background-blur = macos-glass-regular
+
+# editing
+clipboard-trim-trailing-spaces = true
+copy-on-select = clipboard
+
+# keys
 keybind = shift+enter=text:\n
+keybind = super+shift+enter=toggle_split_zoom
+keybind = super+ctrl+left=goto_split:left
+keybind = super+ctrl+right=goto_split:right
+keybind = super+ctrl+up=goto_split:top
+keybind = super+ctrl+down=goto_split:bottom
+keybind = cmd+shift+comma=reload_config
