@@ -37,10 +37,3 @@ end
 
 # autocompletes
 uv generate-shell-completion fish | source
-
-# pnpm
-set -gx PNPM_HOME /Users/dean/Library/pnpm
-if not string match -q -- "$PNPM_HOME/bin" $PATH
-    set -gx PATH "$PNPM_HOME/bin" $PATH
-end
-# pnpm end
