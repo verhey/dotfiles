@@ -42,7 +42,6 @@ brew "fnm"
 brew "charmbracelet/tap/crush"
 cask "ghostty"
 cask "docker-desktop"
-cask "visual-studio-code"
 cask "claude-code"
 cask "zed"
 
