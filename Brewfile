@@ -46,6 +46,7 @@ cask "ghostty"
 cask "docker-desktop"
 cask "claude-code"
 cask "zed"
+uv "ruff"
 
 # browsers
 cask "firefox"
