@@ -49,6 +49,7 @@ sensitive_paths=(
   "$HOME/.npmrc"
   "$HOME/.git-credentials"
   "$HOME/.config/gh/*"
+  "$HOME/.config/fish/work.fish"
   '*.env'
   '*/.env'
   '.env.*'

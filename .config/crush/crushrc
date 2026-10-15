@@ -3,13 +3,15 @@ option attribution-generated-with false
 option auto-summarize false
 option metrics false
 option ui transparent true
-option global-context-path "$HOME/.claude/CLAUDE.md"
+option global-context-path "$HOME/AGENTS.md"
 
 permissions allow view ls glob grep pre-commit fetch agentic_fetch sourcegraph
 
-mcp add notion --type http --url "https://mcp.notion.com/mcp" --oauth true
-mcp add datadog --type http --url "https://mcp.us5.datadoghq.com/v1/mcp" --oauth true
-mcp add shortcut --type http --url "https://mcp.shortcut.com/mcp" --oauth true
+if [[ "$CRUSH_CWD" == "$HOME/code/fg/"* ]]; then
+  mcp add notion --type http --url "https://mcp.notion.com/mcp" --oauth true
+  mcp add datadog --type http --url "https://mcp.us5.datadoghq.com/v1/mcp" --oauth true
+  mcp add shortcut --type http --url "https://mcp.shortcut.com/mcp" --oauth true
+fi
 
 hook add PreToolUse \
   --matcher '^(bash|view|edit|write|multiedit)$' \
