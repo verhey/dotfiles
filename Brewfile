@@ -17,6 +17,7 @@ brew "helix"
 # cloud & infrastructure
 brew "kubectl"
 brew "awscli"
+brew "terraform-ls"
 
 # cli utilities
 brew "coreutils"
@@ -35,6 +36,7 @@ brew "direnv"
 
 # languages & package managers
 brew "go"
+brew "gopls"
 brew "uv"
 brew "fnm"
 

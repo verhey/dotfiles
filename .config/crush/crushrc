@@ -6,6 +6,10 @@ option ui transparent true
 option global-context-path "$HOME/AGENTS.md"
 
 permissions allow view ls glob grep pre-commit fetch agentic_fetch sourcegraph
+permissions allow lsp_diagnostics lsp_definition lsp_references lsp_symbols lsp_call_hierarchy
+
+lsp add go --command gopls --filetypes go --root-markers go.mod --root-markers go.work
+lsp add terraform --command terraform-ls --args serve --filetypes terraform --filetypes tf
 
 if [[ "$CRUSH_CWD" == "$HOME/code/fg/"* ]]; then
   mcp add notion --type http --url "https://mcp.notion.com/mcp" --oauth true
