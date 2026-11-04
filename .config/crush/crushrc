@@ -11,9 +11,11 @@ permissions allow lsp_diagnostics lsp_definition lsp_references lsp_symbols lsp_
 lsp add go --command gopls --filetypes go --root-markers go.mod --root-markers go.work
 lsp add terraform --command terraform-ls --args serve --filetypes terraform --filetypes tf
 
-mcp add notion --type http --url "https://mcp.notion.com/mcp" --oauth true
-mcp add datadog --type http --url "https://mcp.us5.datadoghq.com/v1/mcp" --oauth true
-mcp add shortcut --type http --url "https://mcp.shortcut.com/mcp" --oauth true
+if [[ "$(scutil --get LocalHostName)" == "Dean-FG-MBP" ]]; then
+  mcp add notion --type http --url "https://mcp.notion.com/mcp" --oauth true
+  mcp add datadog --type http --url "https://mcp.us5.datadoghq.com/v1/mcp" --oauth true
+  mcp add shortcut --type http --url "https://mcp.shortcut.com/mcp" --oauth true
+fi
 
 hook add PreToolUse \
   --matcher '^(bash|view|edit|write|multiedit)$' \
